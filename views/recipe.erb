@@ -2,10 +2,10 @@
   <%=@recipe[0]["name"] %>
 </h1>
 <ul>
-  <% @recipe[0].each do |type,info|%>
+  <% @recipe[0].each do |catagory_key,info|%>
     <%if info != nil %>
       <li>
-        <b><%=type %></b>: <%=info %>
+        <b><%=catagory_key %></b>: <%=info %>
       </li>
     <%end%>
   <% end %>
